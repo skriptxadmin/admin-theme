@@ -1,0 +1,20 @@
+extends ../layouts/sidenav
+
+block content
+  h4
+    | Example Form
+  .cointainer
+    form
+        .form-group
+            label(for="email") Email
+            input#email.form-control(type="email", placeholder="Enter email")
+
+        .form-group
+            label(for="phone") Phone Number
+            input#phone.form-control(type="number", placeholder="Enter phone number")
+
+         .form-group
+            label(for="password") Password
+            input#password.form-control(type="password", placeholder="Enter password")
+
+         button.btn.btn-primary(type="submit") Submit

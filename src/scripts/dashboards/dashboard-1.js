@@ -18,6 +18,9 @@ import Chart from "chart.js/auto";
       scales: {
         y: {
           beginAtZero: true,
+          grid: {
+            display: false,
+          },
         },
       },
     },
@@ -94,6 +97,7 @@ import Chart from "chart.js/auto";
       scales: {
         x: {
           beginAtZero: true,
+          grid: false,
         },
         y: {
           beginAtZero: true,
@@ -161,6 +165,7 @@ import Chart from "chart.js/auto";
         display: true,
         text: "Pie Chart Example",
       },
+      aspectRatio: 2,
     },
   });
 })();
