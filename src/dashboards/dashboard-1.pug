@@ -3,9 +3,61 @@ extends ../layouts/sidenav
 block content
     a.btn.btn-link(href="/dashboards")
         | Back to dashboards
+    .row
+        .col-12
+            br
     .container 
         .row 
-            .col-12 
+            .col-md-3 
                 .card 
                     .card-body
+                        h5.card-title 25%
+                        p.card-text summary-1
+                        .progress
+                            .progress-bar(role="progressbar" style="width: 25%" class="bg-danger")
+            .col-md-3 
+                .card 
+                    .card-body
+                        h5.card-title 50%
+                        p.card-text Summary-2
+                        .progress
+                            .progress-bar(role="progressbar" style="width: 50%" class="bg-warning")
+            .col-md-3 
+                .card 
+                    .card-body
+                        h5.card-title 70%
+                        p.card-text Summary-3
+                        .progress
+                            .progress-bar(role="progressbar" style="width: 70%" class="bg-info")
+            .col-md-3 
+                .card 
+                    .card-body
+                        h5.card-title 90%
+                        p.card-text Summary-4
+                        .progress
+                            .progress-bar(role="progressbar" style="width: 90%" class="bg-success")
+        .row
+            .col-12
+                br
+        .row
+            .col-12.col-md-6
+                .card
+                    .card-body
                         canvas#bar1
+            .col-12.col-md-6
+                .card
+                    .card-body
+                        canvas#combo
+        .row
+            .col-12
+                br
+        .row
+            .col-12.col-md-6
+                .card
+                    .card-body
+                        canvas#pie1(style="height:20px")
+                        //- canvas#scatterChart
+            .col-12.col-md-6
+                .card
+                    .card-body
+                        canvas#stackedBar
