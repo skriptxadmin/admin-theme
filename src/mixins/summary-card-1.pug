@@ -1,0 +1,7 @@
+mixin summaryCard1(title, text, width, className)
+    .card 
+        .card-body
+            h5.card-title #{title}%
+            p.card-text #{text}
+            .progress
+                .progress-bar(role="progressbar" style={width: width+"%"} class=className)

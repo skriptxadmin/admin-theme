@@ -1,0 +1,27 @@
+extends ../../layouts/sidenav
+include ../../mixins/summary-card-1 
+
+block content
+    a.btn.btn-link(href="/dashboards")
+        | Back to dashboards
+    .container.mr-3             
+        .row 
+            .col-md-3 
+                +summaryCard1(25, 'Summary 1', 25, 'bg-danger')
+            .col-md-3 
+               +summaryCard1(50, 'Summary 2', 50, 'bg-warning')
+            .col-md-3 
+                +summaryCard1(70, 'Summary 3', 70, 'bg-info')
+            .col-md-3 
+                +summaryCard1(90, 'Summary 4', 90, 'bg-success')
+        .row.mt-3
+            .col-12.col-md-6
+                include ./chart-bar
+            .col-12.col-md-6
+                include ./chart-combo
+        .row.mt-3
+            .col-12.col-md-6
+                include ./chart-pie
+            .col-12.col-md-6
+                include ./chart-stackedbar
+                
