@@ -1,0 +1,16 @@
+extends ../layouts/sidenav
+
+block content
+    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#myModal')
+        | Launch modal
+    #myModal.modal.fade(aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    h5#myModalLabel.modal-title Modal title
+                    button.btn-close(type='button' aria-label='Close')
+                .modal-body
+                    p This is the modal body.
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                    button.btn.btn-primary(type='button') Save changes

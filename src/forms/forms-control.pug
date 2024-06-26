@@ -1,0 +1,18 @@
+extends ../layouts/sidenav
+
+block content
+  .container
+    .row
+      .col-md-6.offset-md-3
+        .card.card-body
+          form(id="myForm")
+            .form-group
+              label(for="name") Name
+              input#name.form-control(type="text" placeholder="Enter your name")
+            .form-group
+              label(for="email") Email
+              input#email.form-control(type="email" placeholder="Enter your email")
+            .form-group
+              label(for="message") Message
+              textarea#message.form-control(placeholder="Enter your message")
+            button.btn.btn-primary(type="submit") Submit
